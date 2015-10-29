@@ -1,0 +1,24 @@
+{
+  "name": "angular2-server-side",
+  "version": "0.0.0",
+  "description": "angular2 server side usage playgruond",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "tsd reinstall --clean && tsd link",
+    "start": "ts-node index.ts"
+  },
+  "keywords": [
+    "angular2",
+    "sever-side"
+  ],
+  "author": "ludohen <ludovic.henin@yahoo.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "ts-node": "^0.2.4",
+    "tsd": "^0.6.5",
+    "typescript": "^1.6.2"
+  },
+  "dependencies": {
+    "angular2": "^2.0.0-alpha.44"
+  }
+}
