@@ -1,6 +1,6 @@
-import 'reflect-metadata/Reflect';
+require('reflect-metadata/Reflect');
 import {bootstrap} from './bootstrap';
-import {Di, PROVIDERS} from './di/di';
+import {Di, DI_PROVIDERS} from './di/di';
 
 
-bootstrap(Di, PROVIDERS);
+bootstrap(Di, DI_PROVIDERS);

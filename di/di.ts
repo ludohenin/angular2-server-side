@@ -11,7 +11,7 @@ export class Di {
 }
 
 
-export const PROVIDERS = [
+export const DI_PROVIDERS = [
   // bind(UserService).toValue(new UserService())
   UserService,
   UserModel,
