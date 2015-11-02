@@ -2,9 +2,11 @@
   "name": "angular2-server-side",
   "version": "0.0.0",
   "description": "angular2 server side usage playgruond",
-  "main": "index.js",
+  "main": "index.ts",
   "scripts": {
+    "clean": "ts-node ./tools/clean.ts",
     "postinstall": "tsd reinstall --clean && tsd link",
+    "serve": "http-server",
     "start": "ts-node index.ts"
   },
   "keywords": [
@@ -14,6 +16,8 @@
   "author": "ludohen <ludovic.henin@yahoo.com>",
   "license": "MIT",
   "devDependencies": {
+    "del": "^2.0.2",
+    "systemjs": "^0.19.5",
     "ts-node": "^0.2.4",
     "tsd": "^0.6.5",
     "typescript": "^1.6.2"
