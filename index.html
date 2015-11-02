@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <base href="/"/>
+  <script src="./node_modules/systemjs/dist/system.src.js"></script>
+  <script>
+    System.config({
+      defaultJSExtensions: true,
+      map: { 'crypto': '@empty' },
+      paths: {
+        '@reactivex/*': 'node_modules/@reactivex/*',
+        'angular2/*': 'node_modules/angular2/*',
+        'reflect-metadata/*': 'node_modules/reflect-metadata/*.js'
+      }
+    });
+    System.import('index.js').catch(function(err) {
+      console.log('error while importing:');
+      console.log(err);
+      console.log(err.stack);
+    });
+  </script>
+</head>
+
+<body>
+  <h1>angular2-server-side</h1>
+  <h3>in the browser :)</h3>
+</body>
+
+</html>

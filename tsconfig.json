@@ -17,6 +17,10 @@
         "di/user_model.ts",
         "di/user_service.ts",
         "index.ts",
+        "lib.ts",
+        "lib/class-decorator.ts",
+        "tools/clean.ts",
+        "tools/typings/del.d.ts",
         "tools/typings/tsd/node/node.d.ts",
         "tools/typings/tsd/tsd.d.ts"
     ],

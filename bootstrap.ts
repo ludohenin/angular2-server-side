@@ -1,7 +1,6 @@
-import {Injector} from 'angular2/angular2';
+import {initRootInjector} from './lib';
 
-export function bootstrap(App, PROVIDERS) {
-  let injector = Injector.resolveAndCreate(PROVIDERS);
-  // TODO: there might be a better way.
-  injector.get(App);
+export function bootstrap(App: any, providers: any[]): void {
+  let injector = initRootInjector(providers);
+  injector.resolveAndInstantiate(App);
 }

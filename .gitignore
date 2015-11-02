@@ -33,8 +33,6 @@ node_modules
 
 dist
 dev
-lib
 test
-tools/typings/tsd
 *.js
 *.js.map
